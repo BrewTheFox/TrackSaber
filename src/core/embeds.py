@@ -21,7 +21,7 @@ def player(color: discord.Colour, data: dict) -> discord.Embed:
         inline=True,
     )
     embed.add_field(
-        name=get_string("PerformancePoints"), value=str(data["pp"]), inline=False
+        name=get_string("PerformancePoints"), value=str(round(data["pp"], 2)), inline=False
     )
     embed.add_field(
         name=get_string("TotalScore"),
